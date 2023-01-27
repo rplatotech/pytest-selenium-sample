@@ -23,8 +23,8 @@ def driver(request):
     access_key = environ.get('LT_ACCESS_KEY', None)
 
     selenium_endpoint = "http://{}:{}@hub.lambdatest.com/wd/hub".format(username, access_key)
-    desired_caps['build'] = build
-    desired_caps['name'] = test_name
+    desired_caps['build'] = "first_build"
+    desired_caps['name'] = "First_XYZ"
     desired_caps['video'] = True
     desired_caps['visual'] = True
     desired_caps['network'] = True
